@@ -35,3 +35,8 @@ Terminal=false
 Type=Application
 Encoding=UTF-8
 Categories=Utility;Development;" | sudo tee -a /usr/share/applications/gitkraken.desktop >/dev/null
+
+# Adding required lib
+cd /opt/gitkraken
+ln -s /usr/lib64/libcurl.so.4 libcurl.so.4
+ln -s /usr/lib64/libcurl.so.4 /usr/lib64/libcurl-gnutls.so.4
