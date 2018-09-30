@@ -23,7 +23,6 @@ source ~/.bashrc
 # Download gitkraken launcher icon
 wget http://img.informer.com/icons_mac/png/128/422/422255.png
 sudo mv 422255.png /opt/gitkraken/icon.png
-rm -rf 422255.png
 
 # Create desktop entry
 sudo touch /usr/share/applications/gitkraken.desktop
