@@ -43,3 +43,5 @@ Categories=Utility;Development;" | sudo tee -a /usr/share/applications/gitkraken
 cd /opt/gitkraken
 sudo ln -sf /usr/lib64/libcurl.so.4 libcurl.so.4
 sudo ln -sf /usr/lib64/libcurl.so.4 /usr/lib64/libcurl-gnutls.so.4
+sudo ln -sf /opt/gitkraken/gitkraken /usr/bin/gitkraken
+
