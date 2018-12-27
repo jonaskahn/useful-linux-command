@@ -9,7 +9,7 @@ echo "dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/S
 echo "Name=Overview
 Comment=Show all windows
 Exec=overview &
-Icon=//opt/overview/overviews.png
+Icon=/opt/overview/overviews.png
 Terminal=false
 Type=Application
 Encoding=UTF-8
