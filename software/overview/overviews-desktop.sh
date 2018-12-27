@@ -6,7 +6,9 @@ sudo touch /usr/bin/overview
 sudo chmod a+x /usr/bin/overview
 sudo touch /usr/share/applications/overviews.desktop
 echo "dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.show();'" | sudo tee -a /usr/bin/overview > /dev/null
-echo "Name=Overview
+echo "
+[Desktop Entry]
+Name=Overview
 Comment=Show all windows
 Exec=overview &
 Icon=/opt/overview/overviews.png
