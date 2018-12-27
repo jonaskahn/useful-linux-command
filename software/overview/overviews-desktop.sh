@@ -20,11 +20,11 @@ chmod +x ~/.local/bin/showoverview
 chmod +x ~/.local/bin/hideoverview
 
 echo "foo=$(systemd-path user)
-sed -i 's/showoverview/hideoverview/' $foo/.local/share/applications/overviews.desktop yarly
+sed -i 's/showoverview/hideoverview/' $foo/.local/share/applications/overviews.desktop /dev/null
 dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.show();'" | tee -a ~/.local/bin/showoverview > /dev/null
 
 echo "foo=$(systemd-path user)
-sed -i 's/hideoverview/showoverview/' $foo/.local/share/applications/overviews.desktop yarly 
+sed -i 's/hideoverview/showoverview/' $foo/.local/share/applications/overviews.desktop /dev/null 
 dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.overview.hide();'" | tee -a ~/.local/bin/hideoverview > /dev/null
 
 echo "
