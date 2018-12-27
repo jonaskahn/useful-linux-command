@@ -1,5 +1,5 @@
 cd /tmp
-sudo wget https://raw.githubusercontent.com/tuyendev/useful-linux-command/master/software/overviews.png
+sudo wget https://raw.githubusercontent.com/tuyendev/useful-linux-command/master/software/overview/overviews.png
 sudo mkdir /opt/overview
 sudo mv overviews.png /opt/overview
 sudo touch /usr/bin/overview
