@@ -39,7 +39,7 @@ echo "
 [Desktop Entry]
 Name=Overview
 Comment=Show all windows
-Exec=overview
+Exec=overview &
 Icon=$foo/.local/.overview/overviews.png
 Terminal=false
 Type=Application
