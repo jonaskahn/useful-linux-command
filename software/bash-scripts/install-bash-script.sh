@@ -18,7 +18,7 @@ else
             if [ -d \"\$d\" ]; then
                 cd \"\$d\"
                 echo ""
-                echo -e \"Project \${RED}\$d \${NC}will run \${NC}: \${YELLOW} \$1 \${NC}\"
+                echo -e \"Project \${RED}\$d \${NC}will run \${NC}: \${GREEN} \$1 \${NC}\"
                 echo \"\"
                 \$1
                 cd ..
