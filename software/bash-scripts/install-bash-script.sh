@@ -4,11 +4,11 @@ rm -f ~/.local/bin/bs
 touch ~/.local/bin/bs
 echo "
 #!/bin/bash
-RED='\e[41m'
-GREEN='\e[102m'
-BLUE='\e[104m'
-YELLOW='\e[103m'
-NC='\e[49m'
+RED='\e[1;31;107m'
+GREEN='\e[1;32;107m'
+BLUE='\e[1;34;107m'
+YELLOW='\e[1;33;107m'
+NC='\e[0;39;40m'
 
 if [ \"\$1\" = \"\" ];then 
     echo \"Do nothing\"
@@ -18,12 +18,12 @@ else
             if [ -d \"\$d\" ]; then
                 cd \"\$d\"
                 echo ""
-                echo -e \"Project \${RED}\$d \${NC}will run \${NC}: \${GREEN} \$1 \${NC}\"
+                echo -e \"Project \${RED} \$d \${NC} will run \${NC}: \${GREEN} \$1 \${NC}\"
                 echo \"\"
                 \$1
                 cd ..
                 echo \"\"
-                echo -e \"\${BLUE}END\${NC}\"
+                echo -e \"\${BLUE}FINISH: \${NC}\${GREEN} \$1 \${NC}\"
                 echo \"\"
             fi
         done
